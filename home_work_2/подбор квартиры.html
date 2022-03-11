@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Поиск квартиры в СПб</title>
+    </head>
+    <body>
+        <form action="#" method="post" name="booking" enctype="multipart/form-data">
+            <label for="district">Удобное местоположение</label>
+            <select id="district" name="district" multiple>
+            <optgroup label="Район города">
+                <option value="1">Выборгский</option>
+                <option value="2">Петроградский</option>
+                <option value="3">Центральный</option>
+                <option value="4">Калининский</option>
+                <option value="5">Приморский</option>
+            </optgroup>
+            <optgroup label="Станция метро">
+                <option value="6">Пл. Ленина</option>
+                <option value="7">Лесная</option>
+                <option value="8">Гражданский проспект</option>
+                <option value="8">Купчино</option>
+            </optgroup>
+            </select>
+            <fieldset>
+                <legend>Количество комнат</legend>
+                <label>
+                    Студия:
+                    <input type="checkbox" name="rooms" value="studio">
+                </label>
+                <label>
+                    Однокомнатная
+                    <input type="checkbox" name="rooms" value="1_room">
+                </label>
+                <Label>
+                    Двухкомнатная
+                    <input checked type="checkbox" name="rooms" value="2_room">
+                </Label>
+                <Label>
+                    Трехкомнатная
+                    <input checked type="checkbox" name="rooms" value="3_room">
+                </Label>
+                <Label>
+                    Более трех комнат
+                    <input checked type="checkbox" name="rooms" value="3+_room">
+                </Label>
+            </fieldset>
+            <div>
+                <label for="year">Год сдачи дома</label>
+                <input id="year" type="number" min="1703" max="2022" name="year">
+            </div>
+            <div>
+                <label for="max price">До какой стоимости искать жилье</label>
+                <input id="max price" type="number" name="max price">
+            </div>
+            <div>
+                <label for="max sq">До какой площади искать жилье</label>
+                <input id="max sq" type="number" name="max sq">
+            </div>
+            <fieldset>
+                <legend>Выбрать отделку</legend>
+                <label>
+                    Без Отделки
+                    <input type="radio" name="furnished" value="no">
+                </label>
+                <label>
+                    С отделкой:
+                    <input type="radio" name="furnished" value="yes">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Наличее терассы</legend>
+                <label>
+                    Только с терассой
+                    <input type="radio" name="terrace" value="1">
+                </label>
+                <label>
+                    Терасса не обязательна
+                    <input type="radio" name="terrace" value="0">
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Выбрать уровень жилья</legend>
+                <label>
+                    Комфорт
+                    <input type="checkbox" name="status" value="comfort">
+                </label>
+                <label>
+                    Бизнес
+                    <input type="checkbox" name="status" value="business">
+                </label>
+                <Label>
+                    Люкс
+                    <input checked type="checkbox" name="status" value="luxe">
+                </Label>
+                <Label>
+                    ДеЛюкс
+                    <input checked type="checkbox" name="status" value="deluxe">
+                </Label>
+                </Label>
+            </fieldset>
+            <select id="floor" name="floor" multiple>
+                <optgroup label="Выбирите этаж">
+                    <option value="-1,">Не первый</option>
+                    <option value="-9,">Не последний</option>
+                    <option value="-9,">Не первый и не последний</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                </optgroup>
+                </select>
+            <div>
+                <button type="submit">Подобрать</button>
+                <button type="reset">Очистить</button>
+            </div>
+        </form>
+    </body>
+</html>
