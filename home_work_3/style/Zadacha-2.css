@@ -1,0 +1,18 @@
+.text-red {
+    color: red;
+}
+.text-red_uppercase_text-bold {
+    color: red;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#text-uppercase {
+    text-transform: uppercase;
+}
+.text-red_bold {
+    color: red;
+    font-weight: bold;
+}
+.line-throught {
+    text-decoration: line-through solid red;
+}

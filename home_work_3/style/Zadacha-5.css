@@ -1,0 +1,29 @@
+body {
+    background-color: rgb(211, 217, 226);
+    text-align: center;
+    }
+div {
+    background-color: rgb(105, 151, 189);
+    width: 200px;
+    height: 300px;
+    display: inline-block;
+    }
+img {
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    }
+p {
+    font-weight: bold; 
+    vertical-align: middle; 
+    text-align: center;
+   }
+.mini {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    float: left;
+    vertical-align: middle;
+}
+
