@@ -1,13 +1,12 @@
 body {
     width: auto;
-    padding: none;
+    margin: 0;
 }
 h1 {
     text-transform: uppercase;
     text-align: center;
     font-weight: bold;
     padding: 20px;
-    width: auto;
     background-color: lightgray;
 }
 .pic1 {
@@ -15,11 +14,8 @@ h1 {
     width: 100%;
     object-fit: cover; 
     }
-div > 3{
-    display: inline;
-} 
 .pic3 img {
-max-height: auto;
+height: auto;
 width: 33%;
 }
 .p04 {

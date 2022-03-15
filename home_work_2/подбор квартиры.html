@@ -5,7 +5,7 @@
         <title>Поиск квартиры в СПб</title>
     </head>
     <body>
-        <form action="#" method="post" name="booking" enctype="multipart/form-data">
+        <form action="#" method="post" name="booking">
             <label for="district">Удобное местоположение</label>
             <select id="district" name="district" multiple>
             <optgroup label="Район города">
@@ -26,23 +26,23 @@
                 <legend>Количество комнат</legend>
                 <label>
                     Студия:
-                    <input type="checkbox" name="rooms" value="studio">
+                    <input type="checkbox" name="rooms[]" value="studio">
                 </label>
                 <label>
                     Однокомнатная
-                    <input type="checkbox" name="rooms" value="1_room">
+                    <input type="checkbox" name="rooms[]" value="1_room">
                 </label>
                 <Label>
                     Двухкомнатная
-                    <input checked type="checkbox" name="rooms" value="2_room">
+                    <input checked type="checkbox" name="rooms[]" value="2_room">
                 </Label>
                 <Label>
                     Трехкомнатная
-                    <input checked type="checkbox" name="rooms" value="3_room">
+                    <input checked type="checkbox" name="rooms[]" value="3_room">
                 </Label>
                 <Label>
                     Более трех комнат
-                    <input checked type="checkbox" name="rooms" value="3+_room">
+                    <input checked type="checkbox" name="rooms[]" value="3+_room">
                 </Label>
             </fieldset>
             <div>
@@ -50,12 +50,12 @@
                 <input id="year" type="number" min="1703" max="2022" name="year">
             </div>
             <div>
-                <label for="max price">До какой стоимости искать жилье</label>
-                <input id="max price" type="number" name="max price">
+                <label for="max_price">До какой стоимости искать жилье</label>
+                <input id="max_price" type="number" name="max price">
             </div>
             <div>
-                <label for="max sq">До какой площади искать жилье</label>
-                <input id="max sq" type="number" name="max sq">
+                <label for="max_sq">До какой площади искать жилье</label>
+                <input id="max_sq" type="number" name="max sq">
             </div>
             <fieldset>
                 <legend>Выбрать отделку</legend>
@@ -83,19 +83,19 @@
                 <legend>Выбрать уровень жилья</legend>
                 <label>
                     Комфорт
-                    <input type="checkbox" name="status" value="comfort">
+                    <input type="checkbox" name="status[]" value="comfort">
                 </label>
                 <label>
                     Бизнес
-                    <input type="checkbox" name="status" value="business">
+                    <input type="checkbox" name="status[]" value="business">
                 </label>
                 <Label>
                     Люкс
-                    <input checked type="checkbox" name="status" value="luxe">
+                    <input checked type="checkbox" name="status[]" value="luxe">
                 </Label>
                 <Label>
                     ДеЛюкс
-                    <input checked type="checkbox" name="status" value="deluxe">
+                    <input checked type="checkbox" name="status[]" value="deluxe">
                 </Label>
                 </Label>
             </fieldset>
