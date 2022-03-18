@@ -1,0 +1,14 @@
+.punkt{
+    display: flex;
+    justify-content: center;
+    /* flex-direction: column; */
+}
+p {
+    text-align: center;
+    color: purple;
+    font-size: larger;
+    padding: 15px 50px;
+}
+.backcolor {
+    background-color: rgb(212, 202, 212);
+}

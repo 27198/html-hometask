@@ -1,0 +1,6 @@
+body {
+    background-image: url(../pictures/road.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    background-attachment: fixed;
+}
